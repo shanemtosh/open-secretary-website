@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="See OpenSecretary in action - an interactive demo showing the autonomous AI agent for Obsidian.">
+    <title>Demo - OpenSecretary</title>
+
+    <link rel="canonical" href="https://opensecretary.com/demo">
+
+    <meta property="og:title" content="Demo - OpenSecretary">
+    <meta property="og:description" content="See OpenSecretary in action - an interactive demo of the autonomous AI agent for Obsidian.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://opensecretary.com/demo">
+
+    <link rel="stylesheet" href="../../styles.css">
+    <link rel="stylesheet" href="../../demo.css">
+</head>
+<body>
+    <div class="demo-page">
+        <header>
+            <div class="header-inner">
+                <a href="/" class="logo">OpenSecretary</a>
+                <nav>
+                    <a href="/demo" class="active">Demo</a>
+                    <a href="https://github.com/shanemtosh/open-secretary" target="_blank" rel="noopener">GitHub</a>
+                </nav>
+            </div>
+        </header>
+
+        <main class="demo-container">
+            <div class="obsidian-frame">
+                <div class="obsidian-titlebar">
+                    <div class="titlebar-dots">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                    </div>
+                    <span class="titlebar-text">Obsidian - My Vault</span>
+                </div>
+                <div class="obsidian-content">
+                    <div class="obsidian-sidebar">
+                        <div class="sidebar-section">
+                            <div class="sidebar-item active">OpenSecretary</div>
+                        </div>
+                    </div>
+                    <div class="chat-panel">
+                        <div class="chat-messages" id="chatMessages">
+                        </div>
+                        <div class="chat-input-area">
+                            <div class="chat-input-box">
+                                <input type="text" class="input-field" id="inputField" placeholder="How can I help you today?" disabled>
+                                <div class="input-row">
+                                    <div class="input-actions">
+                                        <div class="input-selector">
+                                            <span>claude-sonnet</span>
+                                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <polyline points="6 9 12 15 18 9"></polyline>
+                                            </svg>
+                                        </div>
+                                        <div class="input-selector">
+                                            <span>High</span>
+                                            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                                <polyline points="6 9 12 15 18 9"></polyline>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="send-btn">
+                                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                            <line x1="12" y1="19" x2="12" y2="5"></line>
+                                            <polyline points="5 12 12 5 19 12"></polyline>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="input-hints">
+                                    <span>Shift+Tab: Cycle Mode</span>
+                                    <span>Shift+Enter: New Line</span>
+                                </div>
+                                <div class="mobile-send-btn">
+                                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                        <line x1="12" y1="19" x2="12" y2="5"></line>
+                                        <polyline points="5 12 12 5 19 12"></polyline>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <div class="overlay" id="overlay">
+            <div class="overlay-card">
+                <p class="overlay-text" id="overlayText"></p>
+                <div class="overlay-actions">
+                    <button class="overlay-btn" id="overlayBtn">Continue</button>
+                    <button class="overlay-btn-secondary" id="overlaySecondary" style="display: none;">Explore first</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="demo-progress">
+            <div class="progress-bar" id="progressBar"></div>
+        </div>
+    </div>
+
+    <script src="../../demo.js"></script>
+</body>
+</html>
+

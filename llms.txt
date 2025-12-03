@@ -1,0 +1,127 @@
+# OpenSecretary
+
+An autonomous AI agent system for Obsidian.
+
+## Overview
+
+OpenSecretary is an Obsidian plugin that provides an autonomous AI agent for interacting with your vault. Users can chat with the agent to read, write, search, and organize notes. The plugin uses OpenRouter for LLM access and supports multiple models.
+
+**Repository**: https://github.com/shanemtosh/open-secretary
+**Website**: https://opensecretary.com
+**Contact**: shane@mto.sh
+**License**: AGPLv3
+**Copyright**: McIntosh Media LLC (https://mcintosh.media)
+
+## Key Features
+
+### Desktop + Mobile Support
+Works everywhere Obsidian runs - desktop (Windows, macOS, Linux) and mobile (iOS, Android). Unlike traditional coding agents like Claude Code, you can use OpenSecretary on your phone.
+
+### Open Source (AGPLv3)
+Free to use, modify, and share. Community-driven development. Commercial licenses available for proprietary use.
+
+### Bring Your Own Key (BYOK)
+Uses OpenRouter API. Choose from dozens of LLM providers and models. You control your costs and data.
+
+### File Operations
+Full vault control:
+- Read files
+- Write files
+- Edit files
+- Delete files
+- Move files
+- List directories
+- Create directories
+- Append to files
+- Search files
+
+### Sub-Agents
+Specialized agents for specific tasks:
+- **ExploreAgent**: Navigates and maps vault structure
+- **ResearchAgent**: Web research via Perplexity models
+- **WriterAgent**: Long-form content generation
+
+### Agent Modes
+Three autonomy levels:
+- **High**: Full autonomy - executes tools without asking
+- **Low**: Requires user approval for each tool call
+- **Plan**: Creates a plan first, then executes steps with approval
+
+## Installation
+
+### Via BRAT (Beta Testing)
+
+1. Install the BRAT plugin from Obsidian Community Plugins
+2. Open BRAT settings and select "Add Beta Plugin"
+3. Paste: `https://github.com/shanemtosh/open-secretary`
+4. Enable OpenSecretary in Community Plugins
+5. Add your OpenRouter API key in plugin settings
+
+### Manual Installation
+
+1. Download the latest release from https://github.com/shanemtosh/open-secretary/releases
+2. Extract to your Obsidian plugins folder: `.obsidian/plugins/open-secretary/`
+3. Enable the plugin in Obsidian Settings > Community Plugins
+4. Configure your OpenRouter API key in the plugin settings
+
+## Usage
+
+1. Click the bot icon in the ribbon or use the command palette to open the chat
+2. Ask questions about your vault or request tasks to be performed
+3. The agent will read relevant files, execute actions, and respond
+
+## Technical Details
+
+### Stack
+- TypeScript
+- React (for chat UI)
+- Obsidian Plugin API
+- OpenRouter API
+
+### Repository Structure
+```
+open-secretary/
+  src/
+    main.ts                 # Plugin entry point
+    agent/
+      Agent.ts              # Core agent: chat loop, tool dispatch
+      SubAgent.ts           # Base class for sub-agents
+    services/
+      LLMService.ts         # OpenRouter API wrapper
+      RoutineManager.ts     # Saved workflow persistence
+    subagents/
+      ExploreAgent.ts
+      ResearchAgent.ts
+      WriterAgent.ts
+    tools/
+      Tool.ts               # Base Tool interface
+      FileTools.ts          # File operations
+      SearchTool.ts
+      PlanTool.ts
+      SubAgentTool.ts
+    ui/
+      ChatView.tsx          # React chat interface
+  styles.css
+  manifest.json
+```
+
+## License
+
+### Community Edition
+GNU Affero General Public License v3.0 (AGPLv3)
+- Free to use, modify, and share
+- Derivatives must also be AGPLv3
+- Network use requires source code access
+
+### Commercial License
+For proprietary use or commercial SaaS without AGPL obligations.
+Contact: shane@mto.sh
+
+## Links
+
+- GitHub: https://github.com/shanemtosh/open-secretary
+- Issues: https://github.com/shanemtosh/open-secretary/issues
+- Discussions: https://github.com/shanemtosh/open-secretary/discussions
+- OpenRouter: https://openrouter.ai
+- Obsidian: https://obsidian.md
+
