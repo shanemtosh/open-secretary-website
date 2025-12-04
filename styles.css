@@ -52,7 +52,7 @@ a:hover {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    max-width: 900px;
+    max-width: 1100px;
     margin: 0 auto;
     padding: 0 24px;
 }
@@ -70,10 +70,80 @@ header {
 }
 
 .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
     font-size: 20px;
     font-weight: 500;
     text-decoration: none;
     letter-spacing: -0.5px;
+}
+
+.logo-icon {
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+}
+
+.logo-line {
+    stroke: var(--text-primary);
+    stroke-width: 12;
+    stroke-linecap: butt;
+    fill: none;
+}
+
+.line-1 {
+    stroke-dasharray: 100;
+    stroke-dashoffset: 100;
+    animation: draw-rtl 0.4s ease forwards 0.3s;
+}
+
+.line-2 {
+    stroke-dasharray: 50;
+    stroke-dashoffset: 50;
+    animation: draw-ltr-half 0.3s ease forwards 0.7s;
+}
+
+.line-3 {
+    stroke-dasharray: 100;
+    stroke-dashoffset: 100;
+    animation: draw-ltr 0.4s ease forwards 1.0s;
+}
+
+.line-4 {
+    stroke-dasharray: 50;
+    stroke-dashoffset: 50;
+    animation: draw-rtl-half 0.3s ease forwards 1.4s;
+}
+
+.line-5 {
+    stroke-dasharray: 100;
+    stroke-dashoffset: 100;
+    animation: draw-ltr 0.4s ease forwards 1.7s;
+}
+
+@keyframes draw-rtl {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes draw-ltr {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes draw-ltr-half {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes draw-rtl-half {
+    to {
+        stroke-dashoffset: 0;
+    }
 }
 
 nav {
@@ -238,6 +308,29 @@ footer {
     color: var(--text-secondary);
     text-decoration: none;
 }
+
+.footer-brand {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.footer-logo-icon {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+}
+
+.footer-logo-icon .logo-line {
+    stroke: var(--text-secondary);
+    animation-delay: 0.5s;
+}
+
+.footer-logo-icon .line-1 { animation-delay: 0.5s; }
+.footer-logo-icon .line-2 { animation-delay: 0.9s; }
+.footer-logo-icon .line-3 { animation-delay: 1.2s; }
+.footer-logo-icon .line-4 { animation-delay: 1.6s; }
+.footer-logo-icon .line-5 { animation-delay: 1.9s; }
 
 .separator {
     margin: 0 8px;
