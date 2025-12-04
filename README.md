@@ -18,7 +18,9 @@ nginx.example.conf
 
 ## Deployment
 
-Static site. See `nginx.example.conf` for server configuration with Accept-header routing (serves markdown to LLM agents, HTML to browsers).
+Static site. Run `./build.sh` after pull to add cache-busting version params to CSS/JS references.
+
+See `nginx.example.conf` for server configuration with Accept-header routing (serves markdown to LLM agents, HTML to browsers).
 
 ## License
 
