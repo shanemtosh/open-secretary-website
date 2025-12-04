@@ -123,24 +123,36 @@ header {
 }
 
 @keyframes draw-rtl {
+    from {
+        stroke-dashoffset: 100;
+    }
     to {
         stroke-dashoffset: 0;
     }
 }
 
 @keyframes draw-ltr {
+    from {
+        stroke-dashoffset: 100;
+    }
     to {
         stroke-dashoffset: 0;
     }
 }
 
 @keyframes draw-ltr-half {
+    from {
+        stroke-dashoffset: 50;
+    }
     to {
         stroke-dashoffset: 0;
     }
 }
 
 @keyframes draw-rtl-half {
+    from {
+        stroke-dashoffset: 50;
+    }
     to {
         stroke-dashoffset: 0;
     }
