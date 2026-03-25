@@ -8,7 +8,7 @@ Read, write, search, and organize your notes with an intelligent assistant. Work
 
 1. Install the [BRAT plugin](https://github.com/TfTHacker/obsidian42-brat) from Obsidian Community Plugins
 2. Open BRAT settings and select "Add Beta Plugin"
-3. Paste the repository URL: `https://github.com/shanemtosh/open-secretary`
+3. Paste the repository URL: `https://github.com/MimirLLC/open-secretary`
 4. Enable OpenSecretary in Community Plugins
 5. Add your [OpenRouter](https://openrouter.ai) API key in settings
 
@@ -36,5 +36,5 @@ Specialized agents for research, writing, and vault exploration.
 
 ---
 
-[Mimir LLC](https://opensecretary.com) (c) 2025 | [MIT License](https://github.com/shanemtosh/open-secretary/blob/main/LICENSE)
+[Mimir LLC](https://opensecretary.com) (c) 2025 | [MIT License](https://github.com/MimirLLC/open-secretary/blob/main/LICENSE)
 

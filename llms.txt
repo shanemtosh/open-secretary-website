@@ -6,7 +6,7 @@ An autonomous AI agent system for Obsidian.
 
 OpenSecretary is an Obsidian plugin that provides an autonomous AI agent for interacting with your vault. Users can chat with the agent to read, write, search, and organize notes. The plugin uses OpenRouter for LLM access and supports multiple models.
 
-**Repository**: https://github.com/shanemtosh/open-secretary
+**Repository**: https://github.com/MimirLLC/open-secretary
 **Website**: https://opensecretary.com
 **License**: MIT
 **Copyright**: Mimir LLC
@@ -52,13 +52,13 @@ Three autonomy levels:
 
 1. Install the BRAT plugin from Obsidian Community Plugins
 2. Open BRAT settings and select "Add Beta Plugin"
-3. Paste: `https://github.com/shanemtosh/open-secretary`
+3. Paste: `https://github.com/MimirLLC/open-secretary`
 4. Enable OpenSecretary in Community Plugins
 5. Add your OpenRouter API key in plugin settings
 
 ### Manual Installation
 
-1. Download the latest release from https://github.com/shanemtosh/open-secretary/releases
+1. Download the latest release from https://github.com/MimirLLC/open-secretary/releases
 2. Extract to your Obsidian plugins folder: `.obsidian/plugins/open-secretary/`
 3. Enable the plugin in Obsidian Settings > Community Plugins
 4. Configure your OpenRouter API key in the plugin settings
@@ -113,9 +113,9 @@ MIT License
 
 ## Links
 
-- GitHub: https://github.com/shanemtosh/open-secretary
-- Issues: https://github.com/shanemtosh/open-secretary/issues
-- Discussions: https://github.com/shanemtosh/open-secretary/discussions
+- GitHub: https://github.com/MimirLLC/open-secretary
+- Issues: https://github.com/MimirLLC/open-secretary/issues
+- Discussions: https://github.com/MimirLLC/open-secretary/discussions
 - OpenRouter: https://openrouter.ai
 - Obsidian: https://obsidian.md
 

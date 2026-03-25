@@ -1,6 +1,6 @@
 # OpenSecretary Website
 
-Marketing site for [OpenSecretary](https://github.com/shanemtosh/open-secretary), an autonomous AI agent for Obsidian.
+Marketing site for [OpenSecretary](https://github.com/MimirLLC/open-secretary), an autonomous AI agent for Obsidian.
 
 **Live**: [opensecretary.com](https://opensecretary.com)
 
