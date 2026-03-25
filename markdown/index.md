@@ -20,7 +20,7 @@ Works everywhere Obsidian runs. Unlike traditional coding agents, use it on your
 
 ### Open Source
 
-AGPLv3 licensed. Free to use, modify, and share. Community-driven development.
+MIT licensed. Free to use, modify, and share. Community-driven development.
 
 ### Bring Your Own Key
 
@@ -36,5 +36,5 @@ Specialized agents for research, writing, and vault exploration.
 
 ---
 
-[McIntosh Media LLC](https://mcintosh.media) (c) 2025 | [shane@mto.sh](mailto:shane@mto.sh) | [AGPLv3](https://github.com/shanemtosh/open-secretary/blob/main/LICENSE)
+[Mimir LLC](https://opensecretary.com) (c) 2025 | [MIT License](https://github.com/shanemtosh/open-secretary/blob/main/LICENSE)
 

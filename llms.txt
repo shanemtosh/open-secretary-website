@@ -8,17 +8,16 @@ OpenSecretary is an Obsidian plugin that provides an autonomous AI agent for int
 
 **Repository**: https://github.com/shanemtosh/open-secretary
 **Website**: https://opensecretary.com
-**Contact**: shane@mto.sh
-**License**: AGPLv3
-**Copyright**: McIntosh Media LLC (https://mcintosh.media)
+**License**: MIT
+**Copyright**: Mimir LLC
 
 ## Key Features
 
 ### Desktop + Mobile Support
 Works everywhere Obsidian runs - desktop (Windows, macOS, Linux) and mobile (iOS, Android). Unlike traditional coding agents like Claude Code, you can use OpenSecretary on your phone.
 
-### Open Source (AGPLv3)
-Free to use, modify, and share. Community-driven development. Commercial licenses available for proprietary use.
+### Open Source (MIT)
+Free to use, modify, and share. Community-driven development.
 
 ### Bring Your Own Key (BYOK)
 Uses OpenRouter API. Choose from dozens of LLM providers and models. You control your costs and data.
@@ -108,14 +107,9 @@ open-secretary/
 ## License
 
 ### Community Edition
-GNU Affero General Public License v3.0 (AGPLv3)
+MIT License
 - Free to use, modify, and share
-- Derivatives must also be AGPLv3
-- Network use requires source code access
-
-### Commercial License
-For proprietary use or commercial SaaS without AGPL obligations.
-Contact: shane@mto.sh
+- No copyleft requirements
 
 ## Links
 
